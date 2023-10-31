@@ -1,0 +1,48 @@
+.about {
+    margin-bottom: 140px;
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 60px;
+    }
+    &__container {
+        max-width: 800px;
+    }
+    &__item {
+        margin-bottom: 50px;
+        &:first-child {
+            margin-top: 40px;
+        }
+    }
+    &__title {
+        &:first-child {
+            margin-top: 40px;
+        }
+        font-size: 30px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.6;
+        &--quote {
+            padding-left: 56px;
+            margin-bottom: 50px;
+        }
+    }
+    &__quote {
+        font-style: italic;
+        padding-left: 56px;
+        position: relative;
+        font-size: 22px;
+        color: var(--purple-dark-color);
+        font-weight: 700;
+        margin-bottom: 30px;
+        & img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

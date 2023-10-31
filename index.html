@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Nuxt test task</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-mobile-menu">
+          <nav class="nav-mobile">
+            <ul class="nav-mobile__list">
+              <li class="nav__item nav__item--drop-down nav-mobile__item"><a href="#" class="nav__link">SOLUTIONS</a></li>
+              <li class="nav__item nav__item--drop-down nav-mobile__item"><a href="#" class="nav__link">PRODUCTS</a></li>
+              <li class="nav__item nav-mobile__item"><a href="#" class="nav__link">PARNTERS</a></li>
+              <li class="nav__item nav-mobile__item"><a href="#" class="nav__link">DEMO</a></li>
+              <li class="nav__item nav__item--drop-down nav-mobile__item"><a href="#" class="nav__link">EVENTS</a></li>
+              <li class="nav__item nav-mobile__item"><a href="#" class="nav__link">CAREERS</a></li>
+              <li class="nav__item nav-mobile__item"><a href="#" class="nav__link">BLOG</a></li>
+              <li class="nav__item nav-mobile__item"><a href="#" class="nav__link">CONTACT US</a></li>
+            </ul>
+            <div class="socials">
+              <a href="#">
+                <svg class="socials__item" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.75 0H3.25C1.46266 0 0 1.46202 0 3.25V9.75C0 11.5373 1.46266 13 3.25 13H9.75C11.5373 13 13 11.5373 13 9.75V3.25C13 1.46202 11.5373 0 9.75 0ZM6.5 9.20823C5.00402 9.20823 3.79161 7.99532 3.79161 6.5C3.79161 5.00402 5.00402 3.79161 6.5 3.79161C7.99532 3.79161 9.20839 5.00402 9.20839 6.5C9.20839 7.99532 7.99532 9.20823 6.5 9.20823ZM10.0209 3.79161C9.57173 3.79161 9.20839 3.42777 9.20839 2.97911C9.20839 2.53046 9.57173 2.16661 10.0209 2.16661C10.47 2.16661 10.8334 2.53046 10.8334 2.97911C10.8334 3.42777 10.47 3.79161 10.0209 3.79161Z" />
+                  </svg>
+              </a>
+              <a href="#">
+                <svg class="socials__item" width="7" height="13" viewBox="0 0 7 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.76691 12.858V6.99317H6.57502L6.84489 4.70717H4.76691V3.24977C4.76691 2.58571 4.93423 2.13909 5.8086 2.13909H6.92045V0.0881492C6.72614 0.0587661 6.06767 0 5.30125 0C3.69823 0 2.60257 1.06367 2.60257 3.02058V4.70717H0.789062V6.99317H2.60257V12.858H4.76691Z" />
+                  </svg>
+              </a>
+              <a href="#">
+                <svg class="socials__item" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.947 1.5952C15.3824 1.85619 14.7766 2.03338 14.1412 2.1124C14.7904 1.70534 15.2887 1.05884 15.5218 0.290226C14.9138 0.668548 14.2418 0.941514 13.5263 1.08997C12.9525 0.450653 12.1365 0.0507812 11.2313 0.0507812C9.49635 0.0507812 8.08827 1.52576 8.08827 3.34314C8.08827 3.60174 8.1157 3.85316 8.17056 4.0926C5.55785 3.95612 3.24229 2.64396 1.69249 0.651787C1.42276 1.13786 1.26732 1.70295 1.26732 2.30635C1.26732 3.4485 1.82278 4.45656 2.66626 5.04559C2.15194 5.02883 1.66734 4.88037 1.24218 4.63375C1.24218 4.64811 1.24218 4.66008 1.24218 4.67445C1.24218 6.26915 2.32567 7.60046 3.76346 7.90216C3.50059 7.97639 3.22172 8.01709 2.93599 8.01709C2.73255 8.01709 2.53596 7.99554 2.34395 7.95723C2.74397 9.2646 3.90518 10.2176 5.27897 10.2439C4.20234 11.1275 2.84912 11.6543 1.37476 11.6543C1.12103 11.6543 0.871871 11.6375 0.625 11.6088C2.01479 12.5426 3.66745 13.0885 5.44355 13.0885C11.2244 13.0885 14.3858 8.07217 14.3858 3.72146C14.3858 3.5778 14.3835 3.43652 14.3766 3.29525C14.9915 2.83073 15.5241 2.25127 15.9447 1.59041L15.947 1.5952Z" />
+                  </svg>
+              </a>
+              <a href="#">
+                <svg class="socials__item" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77049 13H0.213115V3.94708H2.77049V13ZM1.4918 2.90352C0.668328 2.90352 0 2.25336 0 1.45176C0 0.650164 0.668328 0 1.4918 0C2.31528 0 2.98361 0.650164 2.98361 1.45176C2.98361 2.25336 2.31613 2.90352 1.4918 2.90352ZM13 13H10.4426V8.38795C10.4426 5.6161 7.03279 5.82597 7.03279 8.38795V13H4.47541V3.94708H7.03279V5.39966C8.22282 3.2714 13 3.11421 13 7.43739V13Z" />
+                  </svg>
+              </a>
+              <span style="margin-right: 0 !important;" class="nav__item nav__item--drop-down"><a href="#" class="nav__link">EN</a></span>
+            </div>
+          </nav>
+          
+        </div>
+        <div class="container">
+            <div class="header__top">
+              <a class="header__logo-link" href="#"><img class="header__logo" src="./images/logo.png" alt="logotype"></a>
+              <button class="burger-menu">
+                <span class="burger-menu__item"></span>
+                <span class="burger-menu__item"></span>
+                <span class="burger-menu__item"></span>
+              </button>
+              <div class="socials header__socials">
+                <a href="#">
+                  <svg class="socials__item" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.75 0H3.25C1.46266 0 0 1.46202 0 3.25V9.75C0 11.5373 1.46266 13 3.25 13H9.75C11.5373 13 13 11.5373 13 9.75V3.25C13 1.46202 11.5373 0 9.75 0ZM6.5 9.20823C5.00402 9.20823 3.79161 7.99532 3.79161 6.5C3.79161 5.00402 5.00402 3.79161 6.5 3.79161C7.99532 3.79161 9.20839 5.00402 9.20839 6.5C9.20839 7.99532 7.99532 9.20823 6.5 9.20823ZM10.0209 3.79161C9.57173 3.79161 9.20839 3.42777 9.20839 2.97911C9.20839 2.53046 9.57173 2.16661 10.0209 2.16661C10.47 2.16661 10.8334 2.53046 10.8334 2.97911C10.8334 3.42777 10.47 3.79161 10.0209 3.79161Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                  <svg class="socials__item" width="7" height="13" viewBox="0 0 7 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.76691 12.858V6.99317H6.57502L6.84489 4.70717H4.76691V3.24977C4.76691 2.58571 4.93423 2.13909 5.8086 2.13909H6.92045V0.0881492C6.72614 0.0587661 6.06767 0 5.30125 0C3.69823 0 2.60257 1.06367 2.60257 3.02058V4.70717H0.789062V6.99317H2.60257V12.858H4.76691Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                  <svg class="socials__item" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.947 1.5952C15.3824 1.85619 14.7766 2.03338 14.1412 2.1124C14.7904 1.70534 15.2887 1.05884 15.5218 0.290226C14.9138 0.668548 14.2418 0.941514 13.5263 1.08997C12.9525 0.450653 12.1365 0.0507812 11.2313 0.0507812C9.49635 0.0507812 8.08827 1.52576 8.08827 3.34314C8.08827 3.60174 8.1157 3.85316 8.17056 4.0926C5.55785 3.95612 3.24229 2.64396 1.69249 0.651787C1.42276 1.13786 1.26732 1.70295 1.26732 2.30635C1.26732 3.4485 1.82278 4.45656 2.66626 5.04559C2.15194 5.02883 1.66734 4.88037 1.24218 4.63375C1.24218 4.64811 1.24218 4.66008 1.24218 4.67445C1.24218 6.26915 2.32567 7.60046 3.76346 7.90216C3.50059 7.97639 3.22172 8.01709 2.93599 8.01709C2.73255 8.01709 2.53596 7.99554 2.34395 7.95723C2.74397 9.2646 3.90518 10.2176 5.27897 10.2439C4.20234 11.1275 2.84912 11.6543 1.37476 11.6543C1.12103 11.6543 0.871871 11.6375 0.625 11.6088C2.01479 12.5426 3.66745 13.0885 5.44355 13.0885C11.2244 13.0885 14.3858 8.07217 14.3858 3.72146C14.3858 3.5778 14.3835 3.43652 14.3766 3.29525C14.9915 2.83073 15.5241 2.25127 15.9447 1.59041L15.947 1.5952Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                  <svg class="socials__item" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.77049 13H0.213115V3.94708H2.77049V13ZM1.4918 2.90352C0.668328 2.90352 0 2.25336 0 1.45176C0 0.650164 0.668328 0 1.4918 0C2.31528 0 2.98361 0.650164 2.98361 1.45176C2.98361 2.25336 2.31613 2.90352 1.4918 2.90352ZM13 13H10.4426V8.38795C10.4426 5.6161 7.03279 5.82597 7.03279 8.38795V13H4.47541V3.94708H7.03279V5.39966C8.22282 3.2714 13 3.11421 13 7.43739V13Z" />
+                    </svg>
+                </a>
+                <span style="margin-right: 0 !important;" class="nav__item nav__item--drop-down"><a href="#" class="nav__link">EN</a></span>
+              </div>
+            </div>
+            <div class="header__bottom">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item nav__item--drop-down"><a href="#" class="nav__link">SOLUTIONS</a></li>
+                  <li class="nav__item nav__item--drop-down"><a href="#" class="nav__link">PRODUCTS</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">PARNTERS</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">DEMO</a></li>
+                  <li class="nav__item nav__item--drop-down"><a href="#" class="nav__link">EVENTS</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">CAREERS</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">BLOG</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">CONTACT US</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="bread-crumbs">Home / Solution</div>
+            <div class="hero__inner">
+              <img class="hero__img" src="./images/bulb.png" alt="solution" />
+              <div class="hero__content">
+                <h1 class="hero__title">SOLUTION</h1>
+                <p class="hero__text">Based on more than forty interviews with Jobs con ducted over two years—as well as interviews with more than a hundred familymembers, friends,adver saries, competitors, and colleagues—Walter Isaacson has written a riveting story</p>
+                <p class="hero__text">of the roller-coaster life and searingly intense personality of a creative entre preneur whose passion for perfection and ferocious </p>
+                <a href="#" class="hero__link">
+                  <p>Get propusual</p>
+                  <img src="./images/arrow.png" alt="arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container products__container">
+            <h2 class="title">Products</h2>
+            <p class="products__descr">Explore all the possibilities with test gaming software.</p>
+            <ul class="products__benefits">
+              <li class="products__item">
+                <div class="products__top">
+                  <img class="products__img" src="./images/tech.png" alt="technology">
+                  <h3 class="products__title">Technology</h3>
+                </div>
+                <p class="products__text">At a time when America isseekingwaysto sustain itsinnovative edge, Jobsstands asthe ultimate iconof inventiveness and applied imagination. He knewthat the bestwayto create value in the twenty-first century wasto connect creativity with technology.</p>
+              </li>
+              <li class="products__item">
+                <div class="products__top">
+                  <img class="products__img" src="./images/bussines.png" alt="business">
+                  <h3 class="products__title">Business and innovative</h3>
+                </div>
+                <p class="products__text">At a time when America isseekingwaysto sustain itsinnovative edge, Jobsstands asthe ultimate iconof inventiveness and applied imagination. He knewthat the bestwayto create value in the twenty-first century wasto connect creativity with technology.</p>
+              </li>
+              <li class="products__item">
+                <div class="products__top">
+                  <img class="products__img" src="./images/creativity.png" alt="creativity">
+                  <h3 class="products__title">Creativity</h3>
+                </div>
+                <p class="products__text">At a time when America isseekingwaysto sustain itsinnovative edge, Jobsstands asthe ultimate iconof inventiveness and applied imagination. He knewthat the bestwayto create value in the twenty-first century wasto connect creativity with technology.  </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__container">
+              <h2 class="title title--uppercase">And so what we see</h2>
+              <div class="about__item">
+                <h3 class="about__title">He knew that the best way to create value</h3>
+                <p class="about__text">He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry, devilry, andcompulsion forcontrol that shaped his approach to business and the innovative products that resulted. He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry, devilry, andcompulsion forcontrol that shaped his approach to business and the innovative products that resulted.</p>
+              </div>
+              <div class="about__item">
+                <h3 class="about__title">Walter Isaac son has written a riveting stor</h3>
+                <p class="about__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry, devilry, andcompulsion forcontrol that shaped his approach to business and the innovative products that resulted.</p>
+              </div>
+              <blockquote class="about__quote">
+                "Driven by demons, Jobs could drive those around him to fury and despair But his personality and products were interrelated, just as Apple's hardware and software"
+                <img src="./images/quote.png" alt="quote" />
+              </blockquote>
+              <p class="about__text about__text--quote">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions.</p>
+              <div class="about__item">
+                <h3 class="about__title">Walter Isaac son has written a riveting stor</h3>
+                <p class="about__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry, devilry, andcompulsion forcontrol that shaped his approach to business and the innovative products that resulted.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="slider">
+          <div class="container">
+            <div class="slider__container">
+              <h2 class="title title--uppercase">business and innovative</h2>
+              <p class="slider__info">He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view</p>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./images/foxconn.png" alt="foxconn">
+                <p class="swiper-slide__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry.</p>
+                <h4 class="swiper-slide__title">Alex Uritu</h4>
+                <p class="swiper-slide__text swiper-slide__text--purple">ex-CFO at Foxconn</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./images/samsung.png" alt="samsung">
+                <p class="swiper-slide__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry.</p>
+                <h4 class="swiper-slide__title">Alex Uritu</h4>
+                <p class="swiper-slide__text swiper-slide__text--purple">ex-CFO at Foxconn</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./images/ispace.png" alt="ispace">
+                <p class="swiper-slide__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry.</p>
+                <h4 class="swiper-slide__title">Alex Uritu</h4>
+                <p class="swiper-slide__text swiper-slide__text--purple">ex-CFO at Foxconn</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./images/google.png" alt="google">
+                <p class="swiper-slide__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry.</p>
+                <h4 class="swiper-slide__title">Alex Uritu</h4>
+                <p class="swiper-slide__text swiper-slide__text--purple">ex-CFO at Foxconn</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./images/google.png" alt="google">
+                <p class="swiper-slide__text">He encouraged the people he knew to speak honestly. AndJobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view ofthepassions, perfectionism, obses sions, artistry.</p>
+                <h4 class="swiper-slide__title">Alex Uritu</h4>
+                <p class="swiper-slide__text swiper-slide__text--purple">ex-CFO at Foxconn</p>
+              </div>
+            </div>
+        </section>
+        <section class="faq">
+          <div class="container">
+            <h2 class="title title--uppercase faq__heading">FREQUENTLY ASKED <br> QUESTIONS</h2>
+            <ul class="faq__questions">
+              <li class="faq__item">
+                <button class="faq__accordion">
+                  <h3 class="faq__title">HOW OFTEN IS YOUR FEED UPDATED / HOW FAST AND RESPONSIVE IS YOUR FEED?</h3>
+                  <p class="faq__open">+</p>
+                </button>
+                <div class="faq__panel">
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__accordion">
+                  <h3 class="faq__title">DO YOU OFFER AUTOMATIC SETTLEMENTS?</h3>
+                  <p class="faq__open">+</p>
+                </button>
+                <div class="faq__panel">
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__accordion">
+                  <h3 class="faq__title">HOW DO YOU PROVIDE YOUR DATA?</h3>
+                  <p class="faq__open">+</p>
+                </button>
+                <div class="faq__panel">
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__accordion">
+                  <h3 class="faq__title">WHAT PROGRAMMING LANGUAGES DO YOU SUPPORT FOR THE CONNECTIONS?</h3>
+                  <p class="faq__open">+</p>
+                </button>
+                <div class="faq__panel">
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production.</p>
+                </div>
+              </li>
+              <li class="faq__item">
+                <button class="faq__accordion">
+                  <h3 class="faq__title">WHAT IS YOUR FEEDS’ FORMAT?</h3>
+                  <p class="faq__open">+</p>
+                </button>
+                <div class="faq__panel">
+                  <p class="faq__text">After the clients agree on the packaging and request a trial account, our reliable Tech Support Team support clients to go to production. The system uses PULL (via HTTP requests) and PUSH (via TCP socket) APIs. You connect to the feed and the server starts sending you our system data for your account configuration, we call that the initial data dump, once that is finished, any change that happens in the system will be sent to you as an update if you remain connected to the feed and keep reading the data.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <a class="footer__logo" href="#">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="footer__socials">
+                <h4 class="footer__heading">FOLLOW US</h4>
+                <div class="socials socials--footer">
+                  <a href="#">
+                    <svg class="socials__item" width="20" height="20" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.75 0H3.25C1.46266 0 0 1.46202 0 3.25V9.75C0 11.5373 1.46266 13 3.25 13H9.75C11.5373 13 13 11.5373 13 9.75V3.25C13 1.46202 11.5373 0 9.75 0ZM6.5 9.20823C5.00402 9.20823 3.79161 7.99532 3.79161 6.5C3.79161 5.00402 5.00402 3.79161 6.5 3.79161C7.99532 3.79161 9.20839 5.00402 9.20839 6.5C9.20839 7.99532 7.99532 9.20823 6.5 9.20823ZM10.0209 3.79161C9.57173 3.79161 9.20839 3.42777 9.20839 2.97911C9.20839 2.53046 9.57173 2.16661 10.0209 2.16661C10.47 2.16661 10.8334 2.53046 10.8334 2.97911C10.8334 3.42777 10.47 3.79161 10.0209 3.79161Z" />
+                      </svg>
+                  </a>
+                  <a href="#">
+                    <svg class="socials__item" width="9" height="20" viewBox="0 0 7 13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.76691 12.858V6.99317H6.57502L6.84489 4.70717H4.76691V3.24977C4.76691 2.58571 4.93423 2.13909 5.8086 2.13909H6.92045V0.0881492C6.72614 0.0587661 6.06767 0 5.30125 0C3.69823 0 2.60257 1.06367 2.60257 3.02058V4.70717H0.789062V6.99317H2.60257V12.858H4.76691Z" />
+                      </svg>
+                  </a>
+                  <a href="#">
+                    <svg class="socials__item" width="20" height="18" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.947 1.5952C15.3824 1.85619 14.7766 2.03338 14.1412 2.1124C14.7904 1.70534 15.2887 1.05884 15.5218 0.290226C14.9138 0.668548 14.2418 0.941514 13.5263 1.08997C12.9525 0.450653 12.1365 0.0507812 11.2313 0.0507812C9.49635 0.0507812 8.08827 1.52576 8.08827 3.34314C8.08827 3.60174 8.1157 3.85316 8.17056 4.0926C5.55785 3.95612 3.24229 2.64396 1.69249 0.651787C1.42276 1.13786 1.26732 1.70295 1.26732 2.30635C1.26732 3.4485 1.82278 4.45656 2.66626 5.04559C2.15194 5.02883 1.66734 4.88037 1.24218 4.63375C1.24218 4.64811 1.24218 4.66008 1.24218 4.67445C1.24218 6.26915 2.32567 7.60046 3.76346 7.90216C3.50059 7.97639 3.22172 8.01709 2.93599 8.01709C2.73255 8.01709 2.53596 7.99554 2.34395 7.95723C2.74397 9.2646 3.90518 10.2176 5.27897 10.2439C4.20234 11.1275 2.84912 11.6543 1.37476 11.6543C1.12103 11.6543 0.871871 11.6375 0.625 11.6088C2.01479 12.5426 3.66745 13.0885 5.44355 13.0885C11.2244 13.0885 14.3858 8.07217 14.3858 3.72146C14.3858 3.5778 14.3835 3.43652 14.3766 3.29525C14.9915 2.83073 15.5241 2.25127 15.9447 1.59041L15.947 1.5952Z" />
+                      </svg>
+                  </a>
+                  <a href="#">
+                    <svg class="socials__item" width="20" height="20" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.77049 13H0.213115V3.94708H2.77049V13ZM1.4918 2.90352C0.668328 2.90352 0 2.25336 0 1.45176C0 0.650164 0.668328 0 1.4918 0C2.31528 0 2.98361 0.650164 2.98361 1.45176C2.98361 2.25336 2.31613 2.90352 1.4918 2.90352ZM13 13H10.4426V8.38795C10.4426 5.6161 7.03279 5.82597 7.03279 8.38795V13H4.47541V3.94708H7.03279V5.39966C8.22282 3.2714 13 3.11421 13 7.43739V13Z" />
+                      </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="footer__socials">
+                <h4 class="footer__heading">CONTACT SALES</h4>
+                <a class="footer__link" href="mailto:info@test.com">info@test.com</a>
+              </div>
+            </div>
+              <div class="footer__right">
+                <div class="footer__section">
+                  <h3 class="footer__title">MENU</h3>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Products</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Solutions</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Pricing</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Demo</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="footer__section">
+                  <h3 class="footer__title">INFO</h3>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Terms and Conditions</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Cookie Policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Responible Gambling</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer__section">
+                  <h3 class="footer__title">GUIDES</h3>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">How to Start an Online Casino</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">How to Start an Online Betting Business</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <ul class="footer__partners">
+            <li><img src="./images/sigma.png" alt="sigma"></li>
+            <li><img src="./images/sigaward.png" alt="sigma award"></li>
+            <li><img src="./images/gamble.png" alt="gamble"></li>
+            <li><img src="./images/anilep.png" alt="anilep"></li>
+            <li><img src="./images/pci.png" alt="pci"></li>
+            <li><img src="./images/dmca.png" alt="dmca"></li>
+            <li><img src="./images/compilant.png" alt="compilant"></li>
+            <li><img src="./images/responce.png" alt="responsible gambling"></li>
+          </ul>
+          <div class="footer__copyright">
+            <p>The website is owned and operated by test.</p>
+            <p>© 2018-2022 test, Inc. All rights reserved.</p>
+            <div class="footer__imgs">
+              <img src="./images/18+.png" alt="18+" />
+              <img src="./images/ssl.png" alt="ssl" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
