@@ -23,6 +23,14 @@
         line-height: 1.5;
         opacity: 0.7;
         margin-bottom: 50px;
+        @media screen and (max-width: 600px) {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 16px;
+        }
+
     }
     &__benefits {
         display: grid;
@@ -73,6 +81,11 @@
         }
         @media screen and (max-width: 1000px) {
             font-size: 20px;
+        }
+    }
+    &__text {
+        @media screen and (max-width: 400px) {
+            font-size: 14px;
         }
     }
 }

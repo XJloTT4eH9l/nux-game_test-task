@@ -4,6 +4,7 @@
         justify-content: flex-end;
     }
     &__item {
+        font-size: 14px;
         color: var(--purple-dark-color);
         text-transform: uppercase;
         &:hover {
@@ -27,7 +28,7 @@
                 height: 0;
                 position: absolute;
                 right: 5px;
-                top: 8px;
+                top: 7px;
                 transform: translateY(-50%);
                 transform: rotate(180deg);
                 border-left: 4px solid transparent;
