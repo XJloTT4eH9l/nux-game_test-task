@@ -15,11 +15,18 @@
     }
 }
 
+.swiper {
+    padding-bottom: 10px;
+}
+
 .swiper-slide {
     padding: 22px;
     background-color: var(--white-color);
     min-width: 488px;
     border-radius: var(--border-radius-big);
+    box-shadow: 5px 5px 10px -8px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 5px 5px 10px -8px rgba(0,0,0,0.7);
+    -moz-box-shadow: 5px 5px 10px -8px rgba(0,0,0,0.7);
     @media screen and (max-width: 500px) {
         min-width: 100%;
     }
