@@ -6,6 +6,9 @@
     z-index: 100;
     color: var(--purple-dark-color);
     background-color: var(--white-color);
+    box-shadow: 2px 5px 50px 5px rgba(232,218,247,0.8);
+    -webkit-box-shadow: 2px 5px 50px 5px rgba(232,218,247,0.8);
+    -moz-box-shadow: 2px 5px 50px 5px rgba(232,218,247,0.8);
     &__top {
         display: flex;
         justify-content: space-between;
