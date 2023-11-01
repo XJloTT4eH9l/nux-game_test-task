@@ -1,14 +1,14 @@
 .footer {
     padding-top: 60px;
     background-color: var(--footer-bg-color);
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 420px) {
         padding-top: 30px;
     }
     &__logo {
         display: block;
         width: 112px;
         height: 40px;
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 420px) {
             margin: 0 auto;
         }
     }
@@ -21,7 +21,7 @@
             flex-direction: column-reverse;
             justify-content: center;
         }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 420px) {
             padding-bottom: 30px;
         }
     }
@@ -35,11 +35,14 @@
     }
 
     &__socials {
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 420px) {
             text-align: center;
         }
         &:not(:last-child) {
             margin-bottom: 50px;
+            @media screen and (max-width: 420px) {
+                margin-bottom: 30px;
+            }
         }
     }
     &__heading {
@@ -56,12 +59,13 @@
             margin-top: 30px;
             grid-column-gap: 100px;
         }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 420px) {
+            flex-direction: column;
             padding-right: 0;
         }
     }
     &__section {
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 420px) {
             margin: 0 auto;
             text-align: center;
         }

@@ -8,7 +8,10 @@
         background-color: var(--white-color);
         border-radius: var(--border-radius-big);
         @media screen and (max-width: 600px) {
-            padding: 15px !important;
+            padding: 30px !important;
+        }
+        @media screen and (max-width: 400px) {
+            padding: 20px !important;
         }
     }
     &__descr {
